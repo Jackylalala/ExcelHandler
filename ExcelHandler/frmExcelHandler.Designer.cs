@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnRun = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLimitAmount = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCustomText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,16 +52,16 @@
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
-            // textBox1
+            // txtLimitAmount
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(73, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.txtLimitAmount.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtLimitAmount.Location = new System.Drawing.Point(73, 6);
+            this.txtLimitAmount.Name = "txtLimitAmount";
+            this.txtLimitAmount.Size = new System.Drawing.Size(100, 25);
+            this.txtLimitAmount.TabIndex = 1;
+            this.txtLimitAmount.Text = "0";
+            this.txtLimitAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtLimitAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLimitAmount_KeyPress);
             // 
             // label1
             // 
@@ -99,6 +99,7 @@
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.ReadOnly = true;
+            this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtResult.Size = new System.Drawing.Size(284, 276);
             this.txtResult.TabIndex = 6;
             // 
@@ -148,7 +149,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCustomText);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtLimitAmount);
             this.Controls.Add(this.btnRun);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -165,7 +166,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnRun;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLimitAmount;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCustomText;
         private System.Windows.Forms.Label label2;
